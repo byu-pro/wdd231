@@ -118,6 +118,8 @@ nav ul li a.active {
       display: none; /* Hide menu icon on desktop */
   }
 }
+
+/* Desktop Profile Centering */
 @media screen and (min-width: 769px) {
   .header-container {
       justify-content: center; /* Centers the name and image */
@@ -127,5 +129,105 @@ nav ul li a.active {
   h1 {
       text-align: center;
       margin-left: 0;
+  }
+}
+
+/* MIDDLE SECTION */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+/* Course Work & Location */
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.course-work,
+.location {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+h2 {
+  background-color: #1d4a73;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.location img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Certificate Section */
+.certificate {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.filter-buttons button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.filter-buttons button.active {
+  background-color: #1d4a73;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.courses button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cse {
+  background-color: #8B4513; /* Brown */
+  color: white;
+}
+
+.wdd {
+  background-color: #A52A2A; /* Dark Red */
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .middle-section {
+      flex-direction: column;
+  }
+
+  .filter-buttons {
+      flex-wrap: wrap;
   }
 }
