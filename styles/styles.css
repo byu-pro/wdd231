@@ -145,6 +145,14 @@ main {
   justify-content: space-between;
   gap: 20px;
 }
+.course-work ul {
+  list-style-position: inside; /* Aligns bullet points with text */
+  padding-left: 20px; /* Adjusts left indentation */
+}
+
+.course-work li {
+  margin: 5px 0; /* Adds spacing between items */
+}
 
 .course-work,
 .location {
