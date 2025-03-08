@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Obiko - WDD231</title>
+    <title>John Obiko</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <img src="images/profile.jpg.jpg" alt="John Obiko" class="profile-img">
-            <h1>John Obiko</h1>
-        </div>
-    </header>
+<header>
+    <div class="header-container">
+        <img src="images/profile.jpg.jpg" alt="John Obiko" class="profile-img">
+        <h1>John Obiko</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
-    </nav>
+<nav id="nav-menu">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="#">LinkedIn</a></li>
+    </ul>
+</nav>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>
