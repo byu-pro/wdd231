@@ -231,3 +231,22 @@ h2 {
       flex-wrap: wrap;
   }
 }
+/* FOOTER */
+footer {
+  background-color: #1d4a73; /* Dark Blue */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.flag {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+}
