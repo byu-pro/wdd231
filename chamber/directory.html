@@ -102,3 +102,64 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+<script>
+    const members = [
+        { name: "John Doe", business: "Doe's Hardware", phone: "555-1234" },
+        { name: "Jane Smith", business: "Smith's Bakery", phone: "555-5678" },
+        { name: "Jim Brown", business: "Brown's Auto", phone: "555-8765" }
+    ];
+
+    function displayGrid() {
+        const directory = document.getElementById('directory');
+        directory.className = 'grid';
+        directory.innerHTML = members.map(member => `
+            <div class="member">
+                <h2>${member.name}</h2>
+                <p>${member.business}</p>
+                <p>${member.phone}</p>
+            </div>
+        `).join('');
+    }
+
+    function displayList() {
+        const directory = document.getElementById('directory');
+        directory.className = 'list';
+        directory.innerHTML = members.map(member => `
+            <div class="member">
+                <h2>${member.name}</h2>
+                <p>${member.business}</p>
+                <p>${member.phone}</p>
+            </div>
+        `).join('');
+    }
+
+    document.getElementById('toggleView').addEventListener('click', function() {
+        const directory = document.getElementById('directory');
+        if (directory.className === 'grid') {
+            displayList();
+        } else {
+            displayGrid();
+        }
+    });
+
+    // Initial display
+    displayGrid();
+</script>
+
+<style>
+    #directory.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1em;
+    }
+
+    #directory.list {
+        display: block;
+    }
+
+    .member {
+        border: 1px solid #ccc;
+        padding: 1em;
+        border-radius: 5px;
+    }
+</style>
