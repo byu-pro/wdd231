@@ -1,2 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-  
+header {
+    background: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}

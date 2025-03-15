@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Sunset Bakery",
+        "address": "123 Main St, Hometown, USA",
+        "phone": "(555) 123-4567",
+        "website": "https://sunsetbakery.com",
+        "image": "images/sunset-bakery.png",
+        "membership": 3
+    },
+    {
+        "name": "Greenfield Market",
+        "address": "456 Elm St, Hometown, USA",
+        "phone": "(555) 987-6543",
+        "website": "https://greenfieldmarket.com",
+        "image": "images/greenfield-market.png",
+        "membership": 2
+    }
+]
