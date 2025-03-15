@@ -84,3 +84,18 @@ footer {
     width: 100%;
     position: relative;
 }
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.breadcrumb li {
+    font-size: 14px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #0077cc;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}

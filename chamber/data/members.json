@@ -1,18 +1,58 @@
 [
     {
-        "name": "Sunset Bakery",
-        "address": "123 Main St, Hometown, USA",
-        "phone": "(555) 123-4567",
-        "website": "https://sunsetbakery.com",
-        "image": "images/sunset-bakery.png",
-        "membership": 3
+        "name": "John Doe",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "555-1234",
+        "website_url": "http://johndoe.com",
+        "image_file_name": "johndoe.jpg",
+        "membership_level": "Gold"
     },
     {
-        "name": "Greenfield Market",
-        "address": "456 Elm St, Hometown, USA",
-        "phone": "(555) 987-6543",
-        "website": "https://greenfieldmarket.com",
-        "image": "images/greenfield-market.png",
-        "membership": 2
+        "name": "Jane Smith",
+        "address": "456 Oak St, Anytown, USA",
+        "phone": "555-5678",
+        "website_url": "http://janesmith.com",
+        "image_file_name": "janesmith.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Bob Johnson",
+        "address": "789 Pine St, Anytown, USA",
+        "phone": "555-8765",
+        "website_url": "http://bobjohnson.com",
+        "image_file_name": "bobjohnson.jpg",
+        "membership_level": "Bronze"
+    },
+    {
+        "name": "Alice Williams",
+        "address": "321 Elm St, Anytown, USA",
+        "phone": "555-4321",
+        "website_url": "http://alicewilliams.com",
+        "image_file_name": "alicewilliams.jpg",
+        "membership_level": "Gold"
+    },
+    {
+        "name": "Charlie Brown",
+        "address": "654 Maple St, Anytown, USA",
+        "phone": "555-6789",
+        "website_url": "http://charliebrown.com",
+        "image_file_name": "charliebrown.jpg",
+        "membership_level": "Silver"
+    },
+    {
+        "name": "Emily Davis",
+        "address": "987 Birch St, Anytown, USA",
+        "phone": "555-9876",
+        "website_url": "http://emilydavis.com",
+        "image_file_name": "emilydavis.jpg",
+        "membership_level": "Bronze"
+    },
+    {
+        "name": "Frank Miller",
+        "address": "159 Cedar St, Anytown, USA",
+        "phone": "555-1590",
+        "website_url": "http://frankmiller.com",
+        "image_file_name": "frankmiller.jpg",
+        "membership_level": "Gold"
     }
 ]
