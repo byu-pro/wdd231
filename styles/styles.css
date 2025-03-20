@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* HEADER */
 header {
