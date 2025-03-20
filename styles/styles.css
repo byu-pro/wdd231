@@ -79,7 +79,7 @@ nav ul li a {
 
 /* Active Page Highlight */
 nav ul li a.active {
-  color: yellow;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
