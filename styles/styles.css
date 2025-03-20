@@ -84,6 +84,24 @@ nav ul li a.active {
   font-weight: bold;
 }
 
+/* Hover Effect */
+nav ul li a:hover {
+  color: yellow;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* MOBILE: Hide the navigation by default */
 @media screen and (max-width: 768px) {
   nav {
