@@ -6,11 +6,12 @@
   font-family: Arial, sans-serif;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Open Sans', sans-serif;
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* HEADER */
@@ -86,56 +87,56 @@ nav ul li a.active {
 /* MOBILE: Hide the navigation by default */
 @media screen and (max-width: 768px) {
   nav {
-      display: none; /* Hidden until toggled */
-      position: absolute;
-      width: 100%;
-      top: 70px;
-      left: 0;
+    display: none; /* Hidden until toggled */
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
   }
 
   nav.show {
-      display: block; /* Show menu when toggled */
+    display: block; /* Show menu when toggled */
   }
 
   .menu-toggle {
-      display: block; /* Show menu icon on small screens */
+    display: block; /* Show menu icon on small screens */
   }
 
   nav ul {
-      flex-direction: column;
-      text-align: left;
-      padding-left: 20px;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 
 /* DESKTOP: Ensure nav is always visible */
 @media screen and (min-width: 769px) {
   nav {
-      display: block !important; /* Always show nav on desktop */
-      position: relative;
-      background-color: black;
+    display: block !important; /* Always show nav on desktop */
+    position: relative;
+    background-color: black;
   }
 
   nav ul {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
   .menu-toggle {
-      display: none; /* Hide menu icon on desktop */
+    display: none; /* Hide menu icon on desktop */
   }
 }
 
 /* Desktop Profile Centering */
 @media screen and (min-width: 769px) {
   .header-container {
-      justify-content: center; /* Centers the name and image */
-      text-align: center;
+    justify-content: center; /* Centers the name and image */
+    text-align: center;
   }
 
   h1 {
-      text-align: center;
-      margin-left: 0;
+    text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -227,23 +228,23 @@ h2 {
 }
 
 .cse {
-  background-color: #8B4513; /* Brown */
+  background-color: #8b4513; /* Brown */
   color: white;
 }
 
 .wdd {
-  background-color: #A52A2A; /* Dark Red */
+  background-color: #a52a2a; /* Dark Red */
   color: white;
 }
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .middle-section {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .filter-buttons {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 /* FOOTER */
