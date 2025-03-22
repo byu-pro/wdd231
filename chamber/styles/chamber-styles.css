@@ -179,3 +179,66 @@ footer {
 .breadcrumb a:hover {
     text-decoration: underline;
 }
+/* 🔹 Spotlight Section Styling */
+#spotlights {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* 🔹 Spotlight Container */
+#spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 🔹 Spotlight Card */
+.spotlight-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔹 Spotlight Image */
+.spotlight-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 🔹 Spotlight Card Text */
+.spotlight-card h3 {
+    color: #0056b3;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.spotlight-card p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* 🔹 Spotlight Links */
+.spotlight-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
