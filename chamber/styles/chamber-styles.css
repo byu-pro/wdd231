@@ -45,6 +45,11 @@ nav a {
     font-weight: bold;
 }
 
+/* Change color on hover */
+nav a:hover {
+    color: yellow;
+}
+
 /* Mobile Menu Button */
 #menuToggle {
     display: none;
@@ -55,6 +60,7 @@ nav a {
     cursor: pointer;
     padding: 0.5rem;
 }
+
 /* Logo Styling */
 .logo img {
     height: 50px; /* Adjust size without being too big */
@@ -110,9 +116,6 @@ header {
         display: block; /* Ensures menu is visible when toggled */
     }
 }
-
-
-
 
 /* Main Content */
 main {
