@@ -1,58 +1,58 @@
 [
     {
-        "name": "John Doe",
-        "address": "123 Main St, Anytown, USA",
-        "phone": "555-1234",
-        "website_url": "http://johndoe.com",
-        "image_file_name": "johndoe.jpg",
+        "name": "John Mwangi",
+        "address": "123 Kenyatta Ave, Nairobi, Kenya",
+        "phone": "+254 712 345678",
+        "website_url": "http://johnmwangi.com",
+        "image_file_name": "john_mwangi.png",
         "membership_level": "Gold"
     },
     {
-        "name": "Jane Smith",
-        "address": "456 Oak St, Anytown, USA",
-        "phone": "555-5678",
-        "website_url": "http://janesmith.com",
-        "image_file_name": "janesmith.jpg",
+        "name": "Peter Kiptoo",
+        "address": "456 Moi Avenue, Eldoret, Kenya",
+        "phone": "+254 722 987654",
+        "website_url": "http://peterkiptoo.com",
+        "image_file_name": "peter_kiptoo.png",
         "membership_level": "Silver"
     },
     {
-        "name": "Bob Johnson",
-        "address": "789 Pine St, Anytown, USA",
-        "phone": "555-8765",
-        "website_url": "http://bobjohnson.com",
-        "image_file_name": "bobjohnson.jpg",
+        "name": "David Otieno",
+        "address": "789 Jomo Kenyatta Highway, Kisumu, Kenya",
+        "phone": "+254 733 567890",
+        "website_url": "http://davidotieno.com",
+        "image_file_name": "david_otieno.png",
         "membership_level": "Bronze"
     },
     {
-        "name": "Alice Williams",
-        "address": "321 Elm St, Anytown, USA",
-        "phone": "555-4321",
-        "website_url": "http://alicewilliams.com",
-        "image_file_name": "alicewilliams.jpg",
+        "name": "Mary Wanjiku",
+        "address": "321 Mama Ngina St, Nairobi, Kenya",
+        "phone": "+254 740 432123",
+        "website_url": "http://marywanjiku.com",
+        "image_file_name": "mary_wanjiku.png",
         "membership_level": "Gold"
     },
     {
-        "name": "Charlie Brown",
-        "address": "654 Maple St, Anytown, USA",
-        "phone": "555-6789",
-        "website_url": "http://charliebrown.com",
-        "image_file_name": "charliebrown.jpg",
+        "name": "Faith Achieng",
+        "address": "654 Uhuru Highway, Mombasa, Kenya",
+        "phone": "+254 721 678901",
+        "website_url": "http://faithachieng.com",
+        "image_file_name": "faith_achieng.png",
         "membership_level": "Silver"
     },
     {
-        "name": "Emily Davis",
-        "address": "987 Birch St, Anytown, USA",
-        "phone": "555-9876",
-        "website_url": "http://emilydavis.com",
-        "image_file_name": "emilydavis.jpg",
+        "name": "Mercy Chebet",
+        "address": "987 Kipchoge St, Nakuru, Kenya",
+        "phone": "+254 751 987654",
+        "website_url": "http://mercychebet.com",
+        "image_file_name": "mercy_chebet.png",
         "membership_level": "Bronze"
     },
     {
-        "name": "Frank Miller",
-        "address": "159 Cedar St, Anytown, USA",
-        "phone": "555-1590",
-        "website_url": "http://frankmiller.com",
-        "image_file_name": "frankmiller.jpg",
+        "name": "Brian Kimutai",
+        "address": "159 Eldama Ravine Rd, Kericho, Kenya",
+        "phone": "+254 719 159357",
+        "website_url": "http://briankimutai.com",
+        "image_file_name": "brian_kimutai.png",
         "membership_level": "Gold"
     }
 ]

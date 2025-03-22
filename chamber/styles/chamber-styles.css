@@ -242,3 +242,10 @@ footer {
 .spotlight-card a:hover {
     text-decoration: underline;
 }
+.member-card img {
+    width: 150px; /* Adjust based on usage */
+    height: 150px;
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 10px; /* Optional: makes corners rounded */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
