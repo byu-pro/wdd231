@@ -1,21 +1,38 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navigation */
 header {
     background: #004080;
     color: white;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo is on the left, menu on the right */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push nav to the right */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
@@ -28,17 +45,57 @@ nav a {
     font-weight: bold;
 }
 
+/* Mobile Menu Button */
+#menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Responsive Mobile Navigation */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block; /* Show hamburger icon */
+    }
+
+    #navMenu {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        right: 0;
+        width: 100%;
+        background-color: #004080;
+        border-top: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    #navMenu li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #navMenu li:last-child {
+        border-bottom: none;
+    }
+
+    #navMenu.show {
+        display: block; /* Ensures menu is visible when toggled */
+    }
+}
+
+/* Main Content */
 main {
     padding: 20px;
+    flex: 1; /* Pushes the footer to the bottom */
 }
 
-button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 1rem;
-}
-
+/* Directory Grid */
 #directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -65,17 +122,7 @@ button {
     justify-content: space-between;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; /* Pushes the footer to the bottom */
-}
-
+/* Footer */
 footer {
     background-color: #004080;
     color: white;
@@ -85,67 +132,22 @@ footer {
     position: relative;
 }
 
+/* Breadcrumb */
 .breadcrumb {
     list-style: none;
     display: flex;
     gap: 10px;
 }
+
 .breadcrumb li {
     font-size: 14px;
 }
+
 .breadcrumb a {
     text-decoration: none;
     color: #0077cc;
 }
+
 .breadcrumb a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Navigation Menu */
-#menuToggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-}
-
-#navMenu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-#navMenu li {
-    margin: 0 1em;
-}
-
-@media (max-width: 768px) {
-    #menuToggle {
-        display: block;
-        color: white;
-    }
-
-    #navMenu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        border: 1px solid #ccc;
-    }
-
-    #navMenu li {
-        margin: 0;
-        border-bottom: 1px solid #ccc;
-    }
-
-    #navMenu li:last-child {
-        border-bottom: none;
-    }
-
-    #navMenu.show {
-        display: flex;
-    }
 }
