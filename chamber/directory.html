@@ -111,52 +111,54 @@
         <section id="directory" class="grid">
             <h2>Member Directory</h2>
         </section>
-        </main>
+    </main>
     <footer>
         <p>&copy; <span id="year"></span> Your Chamber Name</p>
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
-<script src="js/scripts.js"></script>
-<script>
-    const members = [
-        { name: "John Doe", business: "Doe's Hardware", phone: "555-1234" },
-        { name: "Jane Smith", business: "Smith's Bakery", phone: "555-5678" },
-        { name: "Jim Brown", business: "Brown's Auto", phone: "555-8765" }
-    ];
+    <script src="js/scripts.js"></script>
+    <script>
+        const members = [
+            { name: "John Doe", business: "Doe's Hardware", phone: "555-1234" },
+            { name: "Jane Smith", business: "Smith's Bakery", phone: "555-5678" },
+            { name: "Jim Brown", business: "Brown's Auto", phone: "555-8765" }
+        ];
 
-    function displayGrid() {
-        const directory = document.getElementById('directory');
-        directory.className = 'grid';
-        directory.innerHTML = members.map(member => `
-            <div class="member">
-                <h2>${member.name}</h2>
-                <p>${member.business}</p>
-                <p>${member.phone}</p>
-            </div>
-        `).join('');
-    }
-
-    function displayList() {
-        const directory = document.getElementById('directory');
-        directory.className = 'list';
-        directory.innerHTML = members.map(member => `
-            <div class="member">
-                <h2>${member.name}</h2>
-                <p>${member.business}</p>
-                <p>${member.phone}</p>
-            </div>
-        `).join('');
-    }
-
-    document.getElementById('toggleView').addEventListener('click', function() {
-        const directory = document.getElementById('directory');
-        if (directory.className === 'grid') {
-            displayList();
-        } else {
-            displayGrid();
+        function displayGrid() {
+            const directory = document.getElementById('directory');
+            directory.className = 'grid';
+            directory.innerHTML = members.map(member => `
+                <div class="member">
+                    <h2>${member.name}</h2>
+                    <p>${member.business}</p>
+                    <p>${member.phone}</p>
+                </div>
+            `).join('');
         }
-    });
 
-    displayGrid();
-</script>
+        function displayList() {
+            const directory = document.getElementById('directory');
+            directory.className = 'list';
+            directory.innerHTML = members.map(member => `
+                <div class="member">
+                    <h2>${member.name}</h2>
+                    <p>${member.business}</p>
+                    <p>${member.phone}</p>
+                </div>
+            `).join('');
+        }
+
+        document.getElementById('toggleView').addEventListener('click', function() {
+            const directory = document.getElementById('directory');
+            if (directory.className === 'grid') {
+                displayList();
+            } else {
+                displayGrid();
+            }
+        });
+
+        displayGrid();
+    </script>
+</body>
+</html>
