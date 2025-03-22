@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/chamberlogo.png">
     <style>
-
         nav {
             position: relative;
         }
@@ -115,17 +114,12 @@
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
+    <!-- ✅ All scripts should be inside the body before </body> -->
     <script src="js/scripts.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
         document.getElementById("lastModified").textContent = document.lastModified;
-    </script>
 
-</body>
-</html>
-
-
-    <script>
         const members = [
             { name: "John Doe", business: "Doe's Hardware", phone: "555-1234" },
             { name: "Jane Smith", business: "Smith's Bakery", phone: "555-5678" },
@@ -167,5 +161,6 @@
 
         displayGrid();
     </script>
+
 </body>
 </html>
