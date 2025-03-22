@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce Directory">
+    <meta name="description" content="Nairobi Business Alliance Chamber of Commerce - Supporting Businesses and Community Growth">
     <meta name="author" content="John Obiko">
     
     <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:title" content="Nairobi Business Alliance Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
-    <meta property="og:description" content="Chamber of Commerce Directory">
-    <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Supporting Businesses and Community Growth">
+    <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/index.html">
 
-    <title>Chamber of Commerce - Business Directory</title>
+    <title>Nairobi Business Alliance Chamber of Commerce</title>
     
     <!-- Link External CSS File -->
     <link rel="stylesheet" href="styles/chamber-styles.css">
@@ -25,29 +25,65 @@
 
     <header>
         <div class="logo">
-            <a href="/index.html">
-                <img src="images/chamberlogo.png" alt="Timbuktu Chamber of Commerce">
+            <a href="index.html">
+                <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce">
             </a>
         </div>
         <button id="menuToggle">☰</button> <!-- Hamburger Button -->
         <nav>
             <ul id="navMenu">
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    
-    
 
     <main>
-        <h1>Nairobi Business Alliance Chamber of Commerce (NBACC)</h1> 
-        <button id="toggleView">Toggle View</button>
-        <section id="directory" class="grid">
-            <h2>Member Directory</h2>
+
+        <!-- Hero Section with Call to Action -->
+        <section id="hero">
+            <img src="images/hero.jpg" alt="Welcome to NBACC">
+            <div class="hero-text">
+                <h1>Empowering Businesses, Strengthening Communities</h1>
+                <p>Join us in growing the economy and networking with business leaders.</p>
+                <a href="join.html" class="cta-button">Join Now</a>
+            </div>
         </section>
+
+        <!-- Current Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Annual Business Expo 2025</h3>
+                <p>Join us for the biggest networking event of the year! March 30, 2025.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: <span id="temp">Loading...</span>°C</p>
+            <p>Condition: <span id="condition">Loading...</span></p>
+        </section>
+
+        <!-- Business Spotlights Section -->
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight">
+                <img src="images/company1.jpg" alt="XYZ Technologies">
+                <h3>XYZ Technologies</h3>
+                <p>Leading innovations in technology and business solutions.</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/company2.jpg" alt="Green Agro Ltd">
+                <h3>Green Agro Ltd</h3>
+                <p>Pioneering sustainable agriculture for a better future.</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -57,6 +93,7 @@
 
     <!-- Link External JavaScript -->
     <script src="scripts/chamber-scripts.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
 </body>
 </html>
