@@ -68,6 +68,23 @@
             }
         }
     </style>
+    <style>
+        #directory.grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1em;
+        }
+
+        #directory.list {
+            display: block;
+        }
+
+        .member {
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -141,24 +158,5 @@
         }
     });
 
-    // Initial display
     displayGrid();
 </script>
-
-<style>
-    #directory.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1em;
-    }
-
-    #directory.list {
-        display: block;
-    }
-
-    .member {
-        border: 1px solid #ccc;
-        padding: 1em;
-        border-radius: 5px;
-    }
-</style>
