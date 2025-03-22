@@ -103,13 +103,12 @@
     </header>
 
     <main>
-        <h1>Chamber of Commerce Directory</h1>  <!-- h1 remains inside <main> -->
-        
+        <h1>Chamber of Commerce Directory</h1> 
         <button id="toggleView">Toggle View</button>
         <section id="directory" class="grid">
             <h2>Member Directory</h2>
         </section>
-    </main>  <!-- ❌ Removed extra <main> tag -->
+    </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Your Chamber Name</p>
@@ -117,7 +116,14 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+
 </body>
+</html>
+
 
     <script>
         const members = [
