@@ -59,7 +59,11 @@ nav a {
 /* Responsive Mobile Navigation */
 @media (max-width: 768px) {
     #menuToggle {
-        display: block; /* Show hamburger icon */
+        display: block; /* Ensure it's visible */
+        position: relative; /* Keep it in flow but allow slight adjustments */
+        margin-left: auto; /* Pushes it to the right */
+        margin-right: -100px; /* Add this to push it further right */
+        right: 10px; /* Fine-tune its position */
     }
 
     #navMenu {
@@ -88,6 +92,9 @@ nav a {
         display: block; /* Ensures menu is visible when toggled */
     }
 }
+
+
+
 
 /* Main Content */
 main {
