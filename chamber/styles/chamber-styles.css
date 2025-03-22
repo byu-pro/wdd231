@@ -55,6 +55,24 @@ nav a {
     cursor: pointer;
     padding: 0.5rem;
 }
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust size without being too big */
+    width: auto;  /* Keeps the aspect ratio */
+}
+
+/* Ensure Header Layout Remains the Same */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Adjust Logo Placement */
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 /* Responsive Mobile Navigation */
 @media (max-width: 768px) {
@@ -62,7 +80,7 @@ nav a {
         display: block; /* Ensure it's visible */
         position: relative; /* Keep it in flow but allow slight adjustments */
         margin-left: auto; /* Pushes it to the right */
-        margin-right: -100px; /* Add this to push it further right */
+        margin-right: -350px; /* Add this to push it further right */
         right: 10px; /* Fine-tune its position */
     }
 
