@@ -1,0 +1,341 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navigation */
+header {
+    background: #004080;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures logo is on the left, menu on the right */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change color on hover */
+nav a:hover {
+    color: yellow;
+}
+
+/* Mobile Menu Button */
+#menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust size without being too big */
+    width: auto;  /* Keeps the aspect ratio */
+}
+
+/* Ensure Header Layout Remains the Same */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Adjust Logo Placement */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Mobile Navigation */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block; /* Ensure it's visible */
+        position: relative; /* Keep it in flow but allow slight adjustments */
+        margin-left: auto; /* Pushes it to the right */
+        margin-right: -330px; /* Add this to push it further right */
+        right: 10px; /* Fine-tune its position */
+    }
+
+    #navMenu {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        right: 0;
+        width: 100%;
+        background-color: #004080;
+        border-top: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    #navMenu li {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #navMenu li:last-child {
+        border-bottom: none;
+    }
+
+    #navMenu.show {
+        display: block; /* Ensures menu is visible when toggled */
+    }
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    flex: 1; /* Pushes the footer to the bottom */
+}
+
+/* Directory Grid */
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Info Sections (Events, Weather, Forecast) */
+#info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Business Spotlight Section */
+#spotlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.business-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.business-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Info Sections (Events, Weather, Forecast) */
+#info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+    min-width: 250px;
+}
+
+/* Business Spotlight Section */
+#spotlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.business-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.business-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the info sections (Events, Weather, Forecast) */
+    #info-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 90%;
+    }
+
+    /* Stack business cards on smaller screens */
+    #spotlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .business-card {
+        width: 90%;
+    }
+
+    /* Adjust CTA button */
+    .cta-button {
+        position: relative;
+        bottom: 10px;
+        right: 0;
+        margin-top: 10px;
+    }
+}
