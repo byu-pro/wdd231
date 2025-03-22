@@ -84,6 +84,7 @@ footer {
     width: 100%;
     position: relative;
 }
+
 .breadcrumb {
     list-style: none;
     display: flex;
@@ -98,4 +99,53 @@ footer {
 }
 .breadcrumb a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Navigation Menu */
+#menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+#navMenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#navMenu li {
+    margin: 0 1em;
+}
+
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block;
+        color: white;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+
+    #navMenu li {
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #navMenu li:last-child {
+        border-bottom: none;
+    }
+
+    #navMenu.show {
+        display: flex;
+    }
 }

@@ -15,83 +15,15 @@
 
     <title>Chamber of Commerce - Business Directory</title>
 
+    <!-- Link External CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/chamberlogo.png">
-    <style>
-        nav {
-            position: relative;
-        }
-
-        #menuToggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5em;
-        }
-
-        #navMenu {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-
-        #navMenu li {
-            margin: 0 1em;
-        }
-
-        @media (max-width: 768px) {
-            #menuToggle {
-                display: block;
-            }
-
-            #navMenu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: white;
-                border: 1px solid #ccc;
-            }
-
-            #navMenu li {
-                margin: 0;
-                border-bottom: 1px solid #ccc;
-            }
-
-            #navMenu li:last-child {
-                border-bottom: none;
-            }
-
-            #navMenu.show {
-                display: flex;
-            }
-        }
-    </style>
-    <style>
-        #directory.grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1em;
-        }
-
-        #directory.list {
-            display: block;
-        }
-
-        .member {
-            border: 1px solid #ccc;
-            padding: 1em;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <button id="menuToggle" aria-label="Toggle Menu" style="color: white;">&#9776;</button>
+            <button id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
             <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -114,53 +46,7 @@
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
-    <!-- ✅ All scripts should be inside the body before </body> -->
+    <!-- Link External JavaScript -->
     <script src="js/scripts.js"></script>
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-        document.getElementById("lastModified").textContent = document.lastModified;
-
-        const members = [
-            { name: "John Doe", business: "Doe's Hardware", phone: "555-1234" },
-            { name: "Jane Smith", business: "Smith's Bakery", phone: "555-5678" },
-            { name: "Jim Brown", business: "Brown's Auto", phone: "555-8765" }
-        ];
-
-        function displayGrid() {
-            const directory = document.getElementById('directory');
-            directory.className = 'grid';
-            directory.innerHTML = members.map(member => `
-                <div class="member">
-                    <h2>${member.name}</h2>
-                    <p>${member.business}</p>
-                    <p>${member.phone}</p>
-                </div>
-            `).join('');
-        }
-
-        function displayList() {
-            const directory = document.getElementById('directory');
-            directory.className = 'list';
-            directory.innerHTML = members.map(member => `
-                <div class="member">
-                    <h2>${member.name}</h2>
-                    <p>${member.business}</p>
-                    <p>${member.phone}</p>
-                </div>
-            `).join('');
-        }
-
-        document.getElementById('toggleView').addEventListener('click', function() {
-            const directory = document.getElementById('directory');
-            if (directory.className === 'grid') {
-                displayList();
-            } else {
-                displayGrid();
-            }
-        });
-
-        displayGrid();
-    </script>
-
 </body>
 </html>
