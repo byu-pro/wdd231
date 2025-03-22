@@ -1,3 +1,4 @@
+console.log("✅ Chamber scripts loaded successfully!");
 document.addEventListener("DOMContentLoaded", () => {
     const directory = document.getElementById("directory");
     const toggleButton = document.getElementById("toggleView");
