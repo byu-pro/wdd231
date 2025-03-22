@@ -1,97 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nairobi Business Alliance Chamber of Commerce - Supporting Businesses and Community Growth">
-    <meta name="author" content="John Obiko">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nairobi Business Alliance Chamber of Commerce - Supporting Businesses and Community Growth"
+    />
+    <meta name="author" content="John Obiko" />
+
     <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="Nairobi Business Alliance Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
-    <meta property="og:description" content="Supporting Businesses and Community Growth">
-    <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/index.html">
+    <meta
+      property="og:title"
+      content="Nairobi Business Alliance Chamber of Commerce"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://byu-pro.github.io/wdd231/images/chamberlogo.png"
+    />
+    <meta
+      property="og:description"
+      content="Supporting Businesses and Community Growth"
+    />
+    <meta
+      property="og:url"
+      content="https://byu-pro.github.io/wdd231/chamber/index.html"
+    />
 
     <title>Nairobi Business Alliance Chamber of Commerce</title>
-    
-    <!-- Link External CSS File -->
-    <link rel="stylesheet" href="styles/index.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/chamberlogo.png">
-</head>
-<body>
 
+    <!-- Link External CSS File -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/chamberlogo.png" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce">
-            </a>
-        </div>
-        <button id="menuToggle">☰</button> <!-- Hamburger Button -->
-        <nav>
-            <ul id="navMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/chamberlogo.png"
+            alt="Nairobi Business Alliance Chamber of Commerce"
+          />
+        </a>
+      </div>
+      <button id="menuToggle">☰</button>
+      <!-- Hamburger Button -->
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <img
+          src="images/chamberhero.png"
+          alt="Scalable, responsive hero image"
+        />
+        <button class="cta-button">Keynote Tickets</button>
+      </section>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <img src="images/chamberhero.png" alt="Scalable, responsive hero image">
-            <button class="cta-button">Keynote Tickets</button>
-        </section>
-    
-        <h1>Home</h1>
-    
-        <!-- Events, Weather, and Forecast Section -->
-        <section id="info-sections">
-            <div class="info-box" id="events">
-                <h2>Events</h2>
-                <p>Event details will go here.</p>
-            </div>
-    
-            <div class="info-box" id="weather">
-                <h2>Current Weather</h2>
-                <p><img src="images/weather-icon.png" alt="Weather Icon"> <span id="temp">75°F</span></p>
-                <p>Partly Cloudy</p>
-                <p>High: 85°F | Low: 52°F</p>
-                <p>Humidity: 34%</p>
-                <p>Sunrise: 7:30 AM | Sunset: 9:59 PM</p>
-            </div>
-    
-            <div class="info-box" id="forecast">
-                <h2>3-Day Forecast</h2>
-                <p>Today: <strong>90°F</strong></p>
-                <p>Wednesday: <strong>89°F</strong></p>
-                <p>Thursday: <strong>68°F</strong></p>
-            </div>
-        </section>
+      <h1>Home</h1>
 
-        <!-- Spotlight Section -->
-        <section id="spotlights">
-            <h2>Business Spotlights</h2>
-            <div id="spotlight-container"></div>
-        </section>
+      <!-- Events, Weather, and Forecast Section -->
+      <section id="info-sections">
+        <div class="info-box" id="events">
+          <h2>Events</h2>
+          <p>Event details will go here.</p>
+        </div>
 
+        <div class="info-box" id="weather">
+          <h2>Current Weather</h2>
+          <p>
+            <img src="images/weather-icon.png" alt="Weather Icon" />
+            <span id="temp">75°F</span>
+          </p>
+          <p>Partly Cloudy</p>
+          <p>High: 85°F | Low: 52°F</p>
+          <p>Humidity: 34%</p>
+          <p>Sunrise: 7:30 AM | Sunset: 9:59 PM</p>
+        </div>
+
+        <div class="info-box" id="forecast">
+          <h2>3-Day Forecast</h2>
+          <p>Today: <strong>90°F</strong></p>
+          <p>Wednesday: <strong>89°F</strong></p>
+          <p>Thursday: <strong>68°F</strong></p>
+        </div>
+      </section>
+
+      <!-- Spotlight Section -->
+      <section id="spotlights">
+        <h2>Business Spotlights</h2>
+        <div id="spotlight-container"></div>
+      </section>
     </main>
-    
 
     <footer>
-        <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce (NBACC)</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
+      <p>
+        &copy; <span id="year"></span> Nairobi Business Alliance Chamber of
+        Commerce (NBACC)
+      </p>
+      <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
     <!-- Link External JavaScript -->
     <script src="scripts/chamber-scripts.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-
-</body>
+  </body>
 </html>
