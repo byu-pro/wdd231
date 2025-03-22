@@ -80,7 +80,7 @@ header {
         display: block; /* Ensure it's visible */
         position: relative; /* Keep it in flow but allow slight adjustments */
         margin-left: auto; /* Pushes it to the right */
-        margin-right: -350px; /* Add this to push it further right */
+        margin-right: -330px; /* Add this to push it further right */
         right: 10px; /* Fine-tune its position */
     }
 
