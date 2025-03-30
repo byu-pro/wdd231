@@ -49,3 +49,16 @@
 .button:hover {
     background-color: #005fa3;
 }
+
+
+.btn {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+    margin-top: 15px; /* Add margin to the top */
+}
+
