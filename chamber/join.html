@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nairobi Business Alliance Chamber of Commerce - Join Page" />
-    <meta name="author" content="John Obiko" />
-    <title>Join the Chamber - Nairobi Business Alliance</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/join.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Join the Nairobi Business Alliance Chamber of Commerce and grow your network with exclusive business opportunities.">
+        <meta name="author" content="John Obiko">
+    
+        <!-- Facebook Open Graph Meta -->
+        <meta property="og:title" content="Join Nairobi Business Alliance Chamber">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
+        <meta property="og:description" content="Become a member of the Nairobi Business Alliance Chamber of Commerce today and access business resources, networking, and growth opportunities.">
+        <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/join.html">
+    
+        <title>Join the Chamber - Nairobi Business Alliance</title>
+    
+        <!-- Link External CSS File -->
+        <link rel="stylesheet" href="styles/chamber-styles.css">
+        <link rel="stylesheet" href="styles/join.css">
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/chamberlogo.png">
+    </head>
+    
+<body>
 
-    <link rel="icon" type="image/png" href="images/chamberlogo.png" />
-  </head>
-  <body>
     <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce" />
-        </a>
-      </div>
-      <button id="menuToggle">☰</button>
-      <nav>
-        <ul id="navMenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce">
+            </a>
+        </div>
+        <button id="menuToggle">☰</button> <!-- Hamburger Button -->
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
       <h1>Join the Chamber</h1>
       <form action="thankyou.html" method="get">
@@ -127,7 +139,10 @@
       </div>
     </footer>
 
+    <!-- Link External JavaScript -->
     <script src="scripts/form.js" defer></script>
     <script src="scripts/modal.js" defer></script>
+    <script src="scripts/chamber-scripts.js" defer></script>
+    
   </body>
 </html>
