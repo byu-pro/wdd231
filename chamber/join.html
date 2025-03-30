@@ -1,54 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="Nairobi Business Alliance Chamber of Commerce - Supporting Businesses and Community Growth"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nairobi Business Alliance Chamber of Commerce - Join Page" />
     <meta name="author" content="John Obiko" />
-
-    <!-- Facebook Open Graph Meta -->
-    <meta
-      property="og:title"
-      content="Nairobi Business Alliance Chamber of Commerce"
-    />
-    <meta property="og:type" content="website">
-
-    <meta
-      property="og:image"
-      content="https://byu-pro.github.io/wdd231/images/chamberlogo.png"
-    />
-    <meta
-      property="og:description"
-      content="Supporting Businesses and Community Growth"
-    />
-    <meta
-      property="og:url"
-      content="https://byu-pro.github.io/wdd231/chamber/index.html"
-    />
-
-    <title>Nairobi Business Alliance Chamber of Commerce</title>
-
-    <!-- Link External CSS File -->
+    <title>Join the Chamber - Nairobi Business Alliance</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/join.css">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/chamberlogo.png" />
   </head>
   <body>
     <header>
       <div class="logo">
         <a href="index.html">
-          <img
-            src="images/chamberlogo.png"
-            alt="Nairobi Business Alliance Chamber of Commerce"
-          />
+          <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce" />
         </a>
       </div>
       <button id="menuToggle">☰</button>
-      <!-- Hamburger Button -->
       <nav>
         <ul id="navMenu">
           <li><a href="index.html">Home</a></li>
@@ -60,82 +30,104 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section id="hero">
-        <img
-          src="images/chamberhero.webp"
-          alt="Scalable, responsive hero image"
-        />
-        <button class="cta-button">Keynote Tickets</button>
-      </section>
+      <h1>Join the Chamber</h1>
+      <form action="thankyou.html" method="get">
+        <label>
+          First Name:
+          <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name" />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name" />
+        </label>
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" title="Enter your title (min 7 characters)" />
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter your email" />
+        </label>
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number" />
+        </label>
+        <label>
+          Business/Organization Name:
+          <input type="text" name="organization" required autocomplete="organization" title="Enter your business name" />
+        </label>
+        <label>
+          Membership Level:
+          <select name="membership" required>
+            <option value="np">Non-Profit</option>
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+          </select>
+        </label>
+        <label>
+          Business Description:
+          <textarea name="description" title="Describe your business"></textarea>
+        </label>
+        <input type="hidden" name="timestamp" id="timestamp" />
+        <input type="submit" value="Apply Now" />
+      </form>
 
-      <h1>Home</h1>
-
-      <!-- Events, Weather, and Forecast Section -->
-      <section id="info-sections">
-        <div class="info-box" id="events">
-          <h2>Events</h2>
-          <p>Event details will go here.</p>
+      <!-- Membership Level Modals -->
+      <div id="npModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('npModal')">&times;</span>
+          <h2>Non-Profit Membership</h2>
+          <p>No fees, networking events, and community support.</p>
         </div>
-
-        <div class="info-box" id="weather">
-          <h2>Current Weather</h2>
-          <p>
-            <img src="images/weather-icon.png" alt="Weather Icon" />
-            <span id="temp">75°F</span>
-          </p>
-          <p>Partly Cloudy</p>
-          <p>High: 85°F | Low: 52°F</p>
-          <p>Humidity: 34%</p>
-          <p>Sunrise: 7:30 AM | Sunset: 9:59 PM</p>
+      </div>
+      <div id="bronzeModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+          <h2>Bronze Membership</h2>
+          <p>Access to standard events and online advertising.</p>
         </div>
-
-        <div class="info-box" id="forecast">
-          <h2>3-Day Forecast</h2>
-          <p>Today: <strong>90°F</strong></p>
-          <p>Wednesday: <strong>89°F</strong></p>
-          <p>Thursday: <strong>68°F</strong></p>
+      </div>
+      <div id="silverModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('silverModal')">&times;</span>
+          <h2>Silver Membership</h2>
+          <p>Includes all Bronze benefits plus training discounts.</p>
         </div>
-      </section>
-
-      <!-- Spotlight Section -->
-      <section id="spotlights">
-        <h2>Business Spotlights</h2>
-        <div id="spotlight-container"></div>
-      </section>
+      </div>
+      <div id="goldModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('goldModal')">&times;</span>
+          <h2>Gold Membership</h2>
+          <p>All Silver benefits plus premium advertising and VIP events.</p>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
-                <p>10 Rue De La Paix</p>
-                <p>Nairobi, Kenya 00100</p>
-                <p>Email: info@nbacc.org</p>
-                <p>Phone: +254 700 123 456</p>
-            </div>
-    
-            <div class="footer-social">
-                <a href="#" target="_blank"><img src="images/icon-youtube-40.png" alt="YouTube"></a>
-                <a href="#" target="_blank"><img src="images/icon-twitter-40.png" alt="Twitter"></a>
-                <a href="#" target="_blank"><img src="images/icon-linkedin-40.png" alt="LinkedIn"></a>
-            </div>
-    
-            <div class="footer-right">
-                <p>WDD231 Class Project</p>
-                <p>John Obiko</p>
-                <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </div>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
+          <p>10 Rue De La Paix</p>
+          <p>Nairobi, Kenya 00100</p>
+          <p>Email: info@nbacc.org</p>
+          <p>Phone: +254 700 123 456</p>
         </div>
+        <div class="footer-social">
+          <a href="#" target="_blank"><img src="images/icon-youtube-40.png" alt="YouTube" /></a>
+          <a href="#" target="_blank"><img src="images/icon-twitter-40.png" alt="Twitter" /></a>
+          <a href="#" target="_blank"><img src="images/icon-linkedin-40.png" alt="LinkedIn" /></a>
+        </div>
+        <div class="footer-right">
+          <p>WDD231 Class Project</p>
+          <p>John Obiko</p>
+          <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+      </div>
     </footer>
-    
-    
 
-    <!-- Link External JavaScript -->
-    <script src="scripts/chamber-scripts.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
   </body>
 </html>

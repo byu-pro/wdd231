@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Nairobi Business Alliance Chamber of Commerce">
+    <meta name="author" content="John Obiko">
+    <title>Thank You - NBACC</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <link rel="icon" type="image/png" href="images/chamberlogo.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce">
+            </a>
+        </div>
+        <button id="menuToggle">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thank-you">
+            <h1>Thank You for Joining!</h1>
+            <p>We appreciate your interest in becoming a member of the Nairobi Business Alliance Chamber of Commerce.</p>
+            
+            <h2>Your Submitted Information</h2>
+            <div class="submitted-info">
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="businessName"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+            </div>
+    
+            <a href="index.html" class="btn">Return to Home</a>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
+                <p>10 Rue De La Paix</p>
+                <p>Nairobi, Kenya 00100</p>
+                <p>Email: info@nbacc.org</p>
+                <p>Phone: +254 700 123 456</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/icon-youtube-40.png" alt="YouTube"></a>
+                <a href="#"><img src="images/icon-twitter-40.png" alt="Twitter"></a>
+                <a href="#"><img src="images/icon-linkedin-40.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>John Obiko</p>
+                <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get URL parameters and display submitted data
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("firstName").textContent = params.get("firstName") || "N/A";
+        document.getElementById("lastName").textContent = params.get("lastName") || "N/A";
+        document.getElementById("email").textContent = params.get("email") || "N/A";
+        document.getElementById("phone").textContent = params.get("phone") || "N/A";
+        document.getElementById("businessName").textContent = params.get("organization") || "N/A";
+        document.getElementById("timestamp").textContent = params.get("timestamp") || "N/A";
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        
+    </script>
+    <script src="scripts/thankyou.js" defer></script>
+
+</body>
+</html>
