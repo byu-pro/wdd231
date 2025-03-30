@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Thank you for joining the Nairobi Business Alliance Chamber of Commerce! Your membership application has been received.">
-        <meta name="author" content="John Obiko">
-    
-        <!-- Facebook Open Graph Meta -->
-        <meta property="og:title" content="Thank You - Nairobi Business Alliance Chamber">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
-        <meta property="og:description" content="We appreciate your interest in the Nairobi Business Alliance Chamber. Your application has been successfully submitted.">
-        <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/thankyou.html">
-    
-        <title>Thank You - Nairobi Business Alliance Chamber</title>
-    
-        <!-- Link External CSS File -->
-        <link rel="stylesheet" href="styles/chamber-styles.css">
-        <link rel="stylesheet" href="styles/thankyou.css">
-    
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="images/chamberlogo.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining the Nairobi Business Alliance Chamber of Commerce! Your membership application has been received.">
+    <meta name="author" content="John Obiko">
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Thank You - Nairobi Business Alliance Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
+    <meta property="og:description" content="We appreciate your interest in the Nairobi Business Alliance Chamber. Your application has been successfully submitted.">
+    <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/thankyou.html">
+
+    <title>Thank You - Nairobi Business Alliance Chamber</title>
+
+    <!-- Link External CSS File -->
+    <link rel="stylesheet" href="styles/chamber-styles.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/chamberlogo.png">
+</head>
 <body>
 
     <header>
@@ -30,7 +30,7 @@
                 <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce">
             </a>
         </div>
-        <button id="menuToggle">☰</button> <!-- Hamburger Button -->
+        <button id="menuToggle" aria-label="Toggle Navigation">☰</button> <!-- Hamburger Button -->
         <nav>
             <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
@@ -40,13 +40,12 @@
             </ul>
         </nav>
     </header>
-    
 
     <main>
         <section class="thank-you">
             <h1>Thank You for Joining!</h1>
             <p>We appreciate your interest in becoming a member of the Nairobi Business Alliance Chamber of Commerce.</p>
-            
+
             <h2>Your Submitted Information</h2>
             <div class="submitted-info">
                 <p><strong>First Name:</strong> <span id="firstName"></span></p>
@@ -56,13 +55,11 @@
                 <p><strong>Business Name:</strong> <span id="businessName"></span></p>
                 <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
             </div>
-    
+
             <!-- Button replacing the link -->
             <button onclick="window.location.href='index.html'" class="btn">Return to Home</button>
         </section>
     </main>
-    
-    
 
     <footer>
         <div class="footer-content">
@@ -87,19 +84,7 @@
         </div>
     </footer>
 
-    <script>
-        // Get URL parameters and display submitted data
-        const params = new URLSearchParams(window.location.search);
-        document.getElementById("firstName").textContent = params.get("firstName") || "N/A";
-        document.getElementById("lastName").textContent = params.get("lastName") || "N/A";
-        document.getElementById("email").textContent = params.get("email") || "N/A";
-        document.getElementById("phone").textContent = params.get("phone") || "N/A";
-        document.getElementById("businessName").textContent = params.get("organization") || "N/A";
-        document.getElementById("timestamp").textContent = params.get("timestamp") || "N/A";
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        
-    </script>
+    <!-- JavaScript to Display Submitted Data -->
     <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <script src="scripts/modal.js" defer></script>

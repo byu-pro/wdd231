@@ -5,24 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Join the Nairobi Business Alliance Chamber of Commerce and grow your network with exclusive business opportunities.">
         <meta name="author" content="John Obiko">
-    
+
         <!-- Facebook Open Graph Meta -->
         <meta property="og:title" content="Join Nairobi Business Alliance Chamber">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png">
         <meta property="og:description" content="Become a member of the Nairobi Business Alliance Chamber of Commerce today and access business resources, networking, and growth opportunities.">
         <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/join.html">
-    
+
         <title>Join the Chamber - Nairobi Business Alliance</title>
-    
+
         <!-- Link External CSS File -->
         <link rel="stylesheet" href="styles/chamber-styles.css">
         <link rel="stylesheet" href="styles/join.css">
-    
+
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="images/chamberlogo.png">
     </head>
-    
+
 <body>
 
     <header>
@@ -41,108 +41,111 @@
             </ul>
         </nav>
     </header>
-    <main>
-      <h1>Join the Chamber</h1>
-      <form action="thankyou.html" method="get">
-        <label>
-          First Name:
-          <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name" />
-        </label>
-        <label>
-          Last Name:
-          <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name" />
-        </label>
-        <label>
-          Organizational Title:
-          <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" title="Enter your title (min 7 characters)" />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter your email" />
-        </label>
-        <label>
-          Mobile Phone:
-          <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number" />
-        </label>
-        <label>
-          Business/Organization Name:
-          <input type="text" name="organization" required autocomplete="organization" title="Enter your business name" />
-        </label>
-        <label>
-          Membership Level:
-          <select name="membership" required>
-            <option value="np">Non-Profit</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-          </select>
-        </label>
-        <label>
-          Business Description:
-          <textarea name="description" title="Describe your business"></textarea>
-        </label>
-        <input type="hidden" name="timestamp" id="timestamp" />
-        <input type="submit" value="Apply Now" />
-      </form>
 
-      <!-- Membership Level Modals -->
-      <div id="npModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('npModal')">&times;</span>
-          <h2>Non-Profit Membership</h2>
-          <p>No fees, networking events, and community support.</p>
+    <main>
+        <h1>Join the Chamber</h1>
+        <form action="thankyou.html" method="get">
+            <label>
+                First Name:
+                <input type="text" name="firstName" required autocomplete="given-name" title="Enter your first name">
+            </label>
+            <label>
+                Last Name:
+                <input type="text" name="lastName" required autocomplete="family-name" title="Enter your last name">
+            </label>
+            <label>
+                Organizational Title:
+                <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" title="Enter your title (min 7 characters)">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Enter your email">
+            </label>
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number">
+            </label>
+            <label>
+                Business/Organization Name:
+                <input type="text" name="organization" required autocomplete="organization" title="Enter your business name">
+            </label>
+            <label>
+                Membership Level:
+                <select name="membership" required>
+                    <option value="" disabled selected>Select a membership level</option>
+                    <option value="np">Non-Profit</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+            <label>
+                Business Description:
+                <textarea name="description" title="Describe your business"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Apply Now">
+        </form>
+
+        <!-- Membership Level Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('npModal')">&times;</span>
+                <h2>Non-Profit Membership</h2>
+                <p>No fees, networking events, and community support.</p>
+            </div>
         </div>
-      </div>
-      <div id="bronzeModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
-          <h2>Bronze Membership</h2>
-          <p>Access to standard events and online advertising.</p>
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+                <h2>Bronze Membership</h2>
+                <p>Access to standard events and online advertising.</p>
+            </div>
         </div>
-      </div>
-      <div id="silverModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('silverModal')">&times;</span>
-          <h2>Silver Membership</h2>
-          <p>Includes all Bronze benefits plus training discounts.</p>
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silverModal')">&times;</span>
+                <h2>Silver Membership</h2>
+                <p>Includes all Bronze benefits plus training discounts.</p>
+            </div>
         </div>
-      </div>
-      <div id="goldModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal('goldModal')">&times;</span>
-          <h2>Gold Membership</h2>
-          <p>All Silver benefits plus premium advertising and VIP events.</p>
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('goldModal')">&times;</span>
+                <h2>Gold Membership</h2>
+                <p>All Silver benefits plus premium advertising and VIP events.</p>
+            </div>
         </div>
-      </div>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-left">
-          <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
-          <p>10 Rue De La Paix</p>
-          <p>Nairobi, Kenya 00100</p>
-          <p>Email: info@nbacc.org</p>
-          <p>Phone: +254 700 123 456</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
+                <p>10 Rue De La Paix</p>
+                <p>Nairobi, Kenya 00100</p>
+                <p>Email: info@nbacc.org</p>
+                <p>Phone: +254 700 123 456</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><img src="images/icon-youtube-40.png" alt="YouTube"></a>
+                <a href="#" target="_blank"><img src="images/icon-twitter-40.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="images/icon-linkedin-40.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>John Obiko</p>
+                <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
         </div>
-        <div class="footer-social">
-          <a href="#" target="_blank"><img src="images/icon-youtube-40.png" alt="YouTube" /></a>
-          <a href="#" target="_blank"><img src="images/icon-twitter-40.png" alt="Twitter" /></a>
-          <a href="#" target="_blank"><img src="images/icon-linkedin-40.png" alt="LinkedIn" /></a>
-        </div>
-        <div class="footer-right">
-          <p>WDD231 Class Project</p>
-          <p>John Obiko</p>
-          <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
-          <p>Last Modification: <span id="lastModified"></span></p>
-        </div>
-      </div>
     </footer>
 
     <!-- Link External JavaScript -->
     <script src="scripts/form.js" defer></script>
     <script src="scripts/modal.js" defer></script>
     <script src="scripts/chamber-scripts.js" defer></script>
-    
-  </body>
+
+</body>
 </html>
+
