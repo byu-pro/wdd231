@@ -56,8 +56,15 @@ img {
     border-radius: 5px;
     display: block;
     margin: 1rem auto;
-    border: 2px solid #7D3C98; /* Purple */
+    border: none; /* Remove the border */
 }
+/* Logo Styling */
+.logo {
+    display: block;
+    max-width: 120px; /* Adjust size as needed */
+    margin: 0 auto 1rem auto; /* Centers logo and adds space below */
+}
+
 
 /* Footer */
 footer {
