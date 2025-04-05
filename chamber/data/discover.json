@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Nairobi National Park",
+      "image": "images/nairobi-park.webp",
+      "address": "Langata Rd, Nairobi, Kenya",
+      "description": "A unique wildlife park located just outside the city center. Home to lions, rhinos, giraffes, and more."
+    },
+    {
+      "name": "Giraffe Centre",
+      "image": "images/giraffe-centre.webp",
+      "address": "Duma Rd, Nairobi, Kenya",
+      "description": "An educational center and sanctuary for the endangered Rothschild giraffe."
+    },
+    {
+      "name": "Karen Blixen Museum",
+      "image": "images/karen-blixen.webp",
+      "address": "Karen Rd, Nairobi, Kenya",
+      "description": "Historic farmhouse once home to the famous author of 'Out of Africa'."
+    },
+    {
+      "name": "Bomas of Kenya",
+      "image": "images/bomas.webp",
+      "address": "Langata Rd, Nairobi, Kenya",
+      "description": "Cultural center offering traditional Kenyan music, dance, and architecture."
+    },
+    {
+      "name": "Nairobi Railway Museum",
+      "image": "images/railway-museum.webp",
+      "address": "Station Rd, Nairobi, Kenya",
+      "description": "Showcases Kenya's rich railway history with vintage locomotives and artifacts."
+    },
+    {
+      "name": "David Sheldrick Wildlife Trust",
+      "image": "images/david-sheldrick.webp",
+      "address": "Mbagathi Rd, Nairobi, Kenya",
+      "description": "Elephant orphanage focused on rescue and rehabilitation of baby elephants."
+    },
+    {
+      "name": "Nairobi National Museum",
+      "image": "images/nairobi-museum.webp",
+      "address": "Museum Hill, Nairobi, Kenya",
+      "description": "Features exhibits on Kenya’s nature, culture, history, and contemporary art."
+    },
+    {
+      "name": "Uhuru Park",
+      "image": "images/uhuru-park.webp",
+      "address": "Uhuru Hwy, Nairobi, Kenya",
+      "description": "Popular recreational park in the heart of the city for gatherings, picnics, and boating."
+    }
+  ]
+  

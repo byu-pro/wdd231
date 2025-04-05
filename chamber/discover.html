@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover key locations, attractions, and statistics of the Nairobi area." />
+  <meta name="author" content="John Obiko" />
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Discover Nairobi - Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://byu-pro.github.io/wdd231/images/chamberlogo.png" />
+  <meta property="og:description" content="Explore places of interest, demographics, and more in Nairobi." />
+  <meta property="og:url" content="https://byu-pro.github.io/wdd231/chamber/discover.html" />
+
+  <title>Discover Nairobi - NBACC</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/chamber-styles.css" />
+  <link rel="stylesheet" href="styles/discover.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/chamberlogo.png" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/chamberlogo.png" alt="Nairobi Business Alliance Chamber of Commerce" />
+      </a>
+    </div>
+    <button id="menuToggle">☰</button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+    <!-- Visitor Welcome Message -->
+    <aside class="visit-message-area">
+      <p class="visit-message"></p>
+    </aside>
+
+    <!-- Discover Cards Grid -->
+    <div class="discover-grid">
+      <!-- JavaScript will insert 8 cards here -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p><strong>Nairobi Business Alliance Chamber of Commerce (NBACC)</strong></p>
+        <p>10 Rue De La Paix</p>
+        <p>Nairobi, Kenya 00100</p>
+        <p>Email: info@nbacc.org</p>
+        <p>Phone: +254 700 123 456</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" target="_blank"><img src="images/icon-youtube-40.png" alt="YouTube" /></a>
+        <a href="#" target="_blank"><img src="images/icon-twitter-40.png" alt="Twitter" /></a>
+        <a href="#" target="_blank"><img src="images/icon-linkedin-40.png" alt="LinkedIn" /></a>
+      </div>
+
+      <div class="footer-right">
+        <p>WDD231 Class Project</p>
+        <p>John Obiko</p>
+        <p>&copy; <span id="year"></span> Nairobi Business Alliance Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/chamber-scripts.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</body>
+</html>
