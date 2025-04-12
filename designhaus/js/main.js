@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const loader = document.querySelector('.loader');
     
     window.addEventListener('load', function() {
-      loader.style.display = 'none';
+      setTimeout(function() {
+        loader.style.opacity = '0';
+        loader.style.visibility = 'hidden';
+      }, 500);
     });
   
     // Smooth scrolling to sections
@@ -17,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
           target.scrollIntoView({
             behavior: 'smooth'
           });
+          
+          // Update URL without jumping
+          if (history.pushState) {
+            history.pushState(null, null, this.getAttribute('href'));
+          } else {
+            location.hash = this.getAttribute('href');
+          }
         }
       });
     });
@@ -29,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         menuToggle.querySelector('i').classList.toggle('fa-times');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
       });
     }
   
@@ -51,7 +62,48 @@ document.addEventListener('DOMContentLoaded', function() {
         if (navLinks.classList.contains('active')) {
           navLinks.classList.remove('active');
           menuToggle.querySelector('i').classList.remove('fa-times');
+          document.body.style.overflow = '';
         }
       });
+    });
+  
+    // Form submission
+    const contactForm = document.querySelector('#contact form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Simulate form submission
+        setTimeout(function() {
+          submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+          
+          // Reset form after 2 seconds
+          setTimeout(function() {
+            contactForm.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          }, 2000);
+        }, 1500);
+      });
+    }
+  
+    // Add focus styles for keyboard navigation
+    document.addEventListener('keyup', function(e) {
+      if (e.key === 'Tab') {
+        const focusedElement = document.activeElement;
+        if (focusedElement && focusedElement.classList) {
+          focusedElement.classList.add('keyboard-focus');
+          
+          focusedElement.addEventListener('blur', function() {
+            this.classList.remove('keyboard-focus');
+          }, { once: true });
+        }
+      }
     });
   });
