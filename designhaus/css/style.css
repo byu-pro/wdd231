@@ -662,3 +662,135 @@ img {
     margin: 0 var(--space-sm);
   }
 }
+/* Site Plan Specific Styles */
+.site-plan-container {
+  padding-top: 100px;
+}
+
+.site-plan-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.site-plan-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.site-plan-section {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-plan-section:last-child {
+  border-bottom: none;
+}
+
+.site-plan-section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  color: var(--accent-primary);
+}
+
+.scenarios-list,
+.sitemap-list {
+  margin-left: var(--space-md);
+}
+
+.scenarios-list li,
+.sitemap-list li {
+  margin-bottom: var(--space-sm);
+}
+
+.color-scheme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.color-box {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.bg-primary {
+  background-color: var(--true-black);
+  border: 1px solid var(--border-color);
+}
+
+.bg-accent {
+  background-color: var(--deep-purple);
+}
+
+.bg-secondary {
+  background-color: var(--soft-white);
+  color: var(--true-black);
+}
+
+.typography-examples {
+  margin-top: var(--space-md);
+}
+
+.typography-heading h3,
+.typography-body h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.wireframe {
+  flex: 1;
+  min-width: 300px;
+}
+
+.wireframe h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.wireframe-image,
+.wireframe img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-md);
+  margin-top: var(--space-sm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .site-plan-header h1 {
+    font-size: 2rem;
+  }
+  
+  .site-plan-section h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .color-box {
+    min-width: 100%;
+  }
+  
+  .wireframe {
+    min-width: 100%;
+  }
+}

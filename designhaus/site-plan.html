@@ -3,79 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site plan for DesignHaus – a personal brand and design agency portfolio site.">
+  <meta name="description" content="Site plan for DesignHaus – a personal brand and design agency portfolio site">
   <title>DesignHaus | Site Plan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" type="image/png" href="images/favicon-light.png" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/png" href="images/favicon-dark.png" media="(prefers-color-scheme: dark)">
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="DesignHaus Logo" class="logo">
-    <h1>DesignHaus Site Plan</h1>
-    <p><strong>Course:</strong> WDD 231 | Individual Website Project</p>
-  </header>
+  <!-- Preloader -->
+  <div class="loader"></div>
 
-  <section>
-    <h2>Site Name</h2>
-    <p><strong>DesignHaus</strong> was selected to represent a refined and modern creative studio. It communicates the professional identity of a brand agency and embodies the aesthetic sensibilities of a designer-led portfolio.</p>
-  </section>
+  <div id="page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">DesignHaus</a>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="site-plan.html" class="active">Site Plan</a></li>
+        </ul>
+        <div class="social-links">
+          <ul>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <section>
-    <h2>Site Purpose</h2>
-    <p>The purpose of DesignHaus is to showcase my graphic and web design projects in a visually engaging and professional manner. The site will serve as my personal brand platform, allowing potential clients, collaborators, or employers to explore case studies, view work samples, and contact me directly.</p>
-  </section>
+    <!-- Site Plan Content -->
+    <main class="site-plan-container section-padding">
+      <div class="container">
+        <header class="site-plan-header">
+          <h1>DesignHaus Site Plan</h1>
+          <p class="subtitle"><strong>Course:</strong> WDD 231 | Individual Website Project</p>
+        </header>
 
-  <section>
-    <h2>Scenarios</h2>
-    <ul>
-      <li>Where can I explore your past branding or design projects?</li>
-      <li>How do I get in touch with you for freelance or agency work?</li>
-    </ul>
-  </section>
+        <section class="site-plan-section">
+          <h2>Site Name</h2>
+          <p><strong>DesignHaus</strong> was selected to represent a refined and modern creative studio. It communicates the professional identity of a brand agency and embodies the aesthetic sensibilities of a designer-led portfolio.</p>
+        </section>
 
-  <section>
-    <h2>Site Map</h2>
-    <p>The website will have the following main pages:</p>
-    <ul>
-      <li><strong>Home</strong> – Overview of DesignHaus and featured work.</li>
-      <li><strong>Work</strong> – Case studies and design portfolio.</li>
-      <li><strong>About</strong> – Background, experience, and brand philosophy.</li>
-      <li><strong>Contact</strong> – Direct contact form and social media links.</li>
-    </ul>
-    <img src="images/sitemap.jpg" alt="DesignHaus Site Map">
-  </section>
+        <section class="site-plan-section">
+          <h2>Site Purpose</h2>
+          <p>The purpose of DesignHaus is to showcase my graphic and web design projects in a visually engaging and professional manner. The site will serve as my personal brand platform, allowing potential clients, collaborators, or employers to explore case studies, view work samples, and contact me directly.</p>
+        </section>
 
-  <section>
-    <h2>Color Scheme</h2>
-    <ul>
-      <li><strong>Primary Color:</strong> #1A1A1D (Dark Black) – used for backgrounds and strong contrast.</li>
-      <li><strong>Accent Color:</strong> #6A0DAD (Royal Purple) – used for buttons, highlights, and key UI elements.</li>
-      <li><strong>Secondary Color:</strong> #D3D3D3 (Light Grey) – used for text and subtle backgrounds.</li>
-    </ul>
-  </section>
+        <section class="site-plan-section">
+          <h2>Scenarios</h2>
+          <ul class="scenarios-list">
+            <li>Where can I explore your past branding or design projects?</li>
+            <li>How do I get in touch with you for freelance or agency work?</li>
+          </ul>
+        </section>
 
-  <section>
-    <h2>Typography</h2>
-    <ul>
-      <li><strong>Heading Font:</strong> Montserrat – clean, modern sans-serif for titles.</li>
-      <li><strong>Body Font:</strong> Inter – highly readable sans-serif for content.</li>
-    </ul>
-  </section>
+        <section class="site-plan-section">
+          <h2>Site Map</h2>
+          <p>The website will have the following main pages:</p>
+          <ul class="sitemap-list">
+            <li><strong>Home</strong> – Overview of DesignHaus and featured work</li>
+            <li><strong>Portfolio</strong> – Case studies and design portfolio</li>
+            <li><strong>About</strong> – Background, experience, and brand philosophy</li>
+          </ul>
+          <div class="wireframe-image">
+            <img src="images/sitemap.jpg" alt="DesignHaus Site Map" loading="lazy">
+          </div>
+        </section>
 
-  <section>
-    <h2>Wireframes</h2>
-    <p><strong>Mobile View (320px)</strong></p>
-    <img src="images/Mobile-wireframe.jpg" alt="Mobile Wireframe for DesignHaus">
-    <p><strong>Desktop View</strong></p>
-    <img src="images/Desktop-Wireframe.jpg" alt="Desktop Wireframe for DesignHaus">
-  </section>
+        <section class="site-plan-section">
+          <h2>Color Scheme</h2>
+          <div class="color-scheme">
+            <div class="color-box bg-primary">
+              <span>Primary: #1A1A1D</span>
+            </div>
+            <div class="color-box bg-accent">
+              <span>Accent: #6A0DAD</span>
+            </div>
+            <div class="color-box bg-secondary">
+              <span>Secondary: #D3D3D3</span>
+            </div>
+          </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 DesignHaus | John Obiko</p>
-  </footer>
+        <section class="site-plan-section">
+          <h2>Typography</h2>
+          <div class="typography-examples">
+            <div class="typography-heading">
+              <h3>Heading Font: Montserrat</h3>
+              <p>Clean, modern sans-serif for titles</p>
+            </div>
+            <div class="typography-body">
+              <h3>Body Font: Inter</h3>
+              <p>Highly readable sans-serif for content</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="site-plan-section">
+          <h2>Wireframes</h2>
+          <div class="wireframes">
+            <div class="wireframe">
+              <h3>Mobile View (320px)</h3>
+              <img src="images/Mobile-wireframe.jpg" alt="Mobile Wireframe for DesignHaus" loading="lazy">
+            </div>
+            <div class="wireframe">
+              <h3>Desktop View</h3>
+              <img src="images/Desktop-Wireframe.jpg" alt="Desktop Wireframe for DesignHaus" loading="lazy">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="site-plan.html">Site Plan</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top">
+    <a href="#" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
