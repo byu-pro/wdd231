@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DesignHaus - Creative design studio specializing in branding and web design">
+  <title>DesignHaus | Creative Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" href="images/favicon-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="DesignHaus Logo" width="180" height="60" class="logo" loading="lazy">
+      </a>
+      
+      <button class="nav-toggle" aria-label="Open navigation menu">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Crafting Distinctive Brand Experiences</h1>
+        <p class="hero__text">We design with purpose, creating visual identities that tell your unique story.</p>
+        <a href="work.html" class="btn btn--primary">View Our Work</a>
+      </div>
+    </section>
+
+    <section class="featured-work">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="featuredProjects">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <div class="testimonials__slider" id="testimonialsSlider">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <img src="images/logo-light.png" alt="DesignHaus Logo" width="150" height="50" class="footer__logo" loading="lazy">
+          <p class="footer__tagline">Design that speaks volumes.</p>
+        </div>
+        
+        <div class="footer__nav">
+          <h3 class="footer__title">Explore</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="work.html" class="footer__link">Work</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__social">
+          <h3 class="footer__title">Connect</h3>
+          <ul class="social__list">
+            <li><a href="#" class="social__link" aria-label="Instagram">IG</a></li>
+            <li><a href="#" class="social__link" aria-label="Dribbble">DB</a></li>
+            <li><a href="#" class="social__link" aria-label="LinkedIn">LN</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__legal">
+        <p>&copy; 2025 DesignHaus. All rights reserved.</p>
+        <a href="attributions.html" class="footer__link">Attributions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
