@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head content as index.html -->
+  <title>DesignHaus | About & Contact</title>
+</head>
+<body>
+  <header class="header">
+    <!-- Same header as index.html -->
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h1 class="section-title">About DesignHaus</h1>
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Our Design Philosophy</h2>
+            <p>We believe in creating meaningful designs that tell stories and solve problems...</p>
+            <!-- More content -->
+          </div>
+          <div class="about-image">
+            <img src="images/studio.jpg" alt="DesignHaus Studio" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-title">Meet the Team</h2>
+        <div class="team-grid" id="teamMembers">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <form id="contactForm" class="contact-form">
+            <!-- Form fields -->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <!-- More form fields -->
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <!-- Contact details -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <script type="module" src="scripts/about.js"></script>
+</body>
+</html>

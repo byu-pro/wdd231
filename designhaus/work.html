@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head content as index.html -->
+  <title>DesignHaus | Our Work</title>
+</head>
+<body>
+  <header class="header">
+    <!-- Same header as index.html -->
+  </header>
+
+  <main>
+    <section class="portfolio-intro">
+      <div class="container">
+        <h1 class="section-title">Our Creative Portfolio</h1>
+        <p>Explore our selection of branding, web design, and digital projects.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-filter">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-grid">
+      <div class="container">
+        <div class="projects-container" id="projectsContainer">
+          <!-- JavaScript will populate this -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Same footer as index.html -->
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/work.js"></script>
+</body>
+</html>
