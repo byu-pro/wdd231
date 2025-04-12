@@ -26,8 +26,9 @@
           <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="social-links">
@@ -45,13 +46,14 @@
       <div class="hero-content">
         <h1>Welcome to DesignHaus</h1>
         <p>Your one-stop destination for creative design and web development by John Obiko.</p>
+        <a href="portfolio.html" class="btn">View My Work</a>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- Portfolio Preview Section -->
+    <section id="portfolio-preview">
       <div class="container">
-        <h2>My Portfolio</h2>
+        <h2>Featured Projects</h2>
         <div class="portfolio-grid">
           <div class="portfolio-item">
             <div class="portfolio-image" style="background-image:url('images/project-1.jpg');">
@@ -78,20 +80,23 @@
             </div>
           </div>
         </div>
+        <div class="view-all">
+          <a href="portfolio.html" class="btn">View All Projects</a>
+        </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about">
+    <!-- About Preview Section -->
+    <section id="about-preview">
       <div class="container">
-        <h2>About Me</h2>
         <div class="about-content">
+          <div class="about-text">
+            <h2>About John Obiko</h2>
+            <p>I am a web designer and developer with a passion for creating user-friendly and visually stunning websites. My focus is on delivering exceptional user experiences with cutting-edge technologies.</p>
+            <a href="about.html" class="btn">Learn More</a>
+          </div>
           <div class="about-image">
             <img src="images/person3.jpg" alt="John Obiko">
-          </div>
-          <div class="about-text">
-            <h3>John Obiko</h3>
-            <p>I am a web designer and developer with a passion for creating user-friendly and visually stunning websites. My focus is on delivering exceptional user experiences with cutting-edge technologies.</p>
           </div>
         </div>
       </div>
@@ -100,7 +105,7 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2>Contact Me</h2>
+        <h2>Get In Touch</h2>
         <form action="#" method="post">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
@@ -112,7 +117,13 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+      <div class="footer-content">
+        <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
     </footer>
   </div>
 
