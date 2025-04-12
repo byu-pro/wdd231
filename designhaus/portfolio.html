@@ -25,22 +25,21 @@
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <div class="social-links">
           <ul>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Portfolio Hero Section -->
-    <section id="portfolio-hero">
+    <section id="portfolio-hero" class="hero-section">
       <div class="container">
         <h1>My Portfolio</h1>
         <p>A collection of my best work and projects</p>
@@ -48,9 +47,9 @@
     </section>
 
     <!-- Portfolio Filter -->
-    <section id="portfolio-filter">
+    <section id="portfolio-filter" class="section-padding bg-dark">
       <div class="container">
-        <ul>
+        <ul class="filter-nav">
           <li class="active" data-filter="all">All Projects</li>
           <li data-filter="web">Web Design</li>
           <li data-filter="branding">Branding</li>
@@ -60,71 +59,71 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section id="portfolio-grid">
+    <section id="portfolio-grid" class="section-padding">
       <div class="container">
         <div class="grid">
           <!-- Project 1 -->
           <div class="portfolio-item" data-category="web">
-            <div class="portfolio-image" style="background-image:url('images/project-1.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-1.jpg')">
               <div class="overlay">
                 <h3>E-Commerce Website</h3>
                 <span class="category">Web Design</span>
-                <a href="project-1.html" class="btn">View Project</a>
+                <a href="project-1.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
           
           <!-- Project 2 -->
           <div class="portfolio-item" data-category="branding">
-            <div class="portfolio-image" style="background-image:url('images/project-2.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-2.jpg')">
               <div class="overlay">
                 <h3>Corporate Branding</h3>
                 <span class="category">Branding</span>
-                <a href="project-2.html" class="btn">View Project</a>
+                <a href="project-2.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
           
           <!-- Project 3 -->
           <div class="portfolio-item" data-category="illustration">
-            <div class="portfolio-image" style="background-image:url('images/project-3.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-3.jpg')">
               <div class="overlay">
                 <h3>Digital Illustrations</h3>
                 <span class="category">Illustration</span>
-                <a href="project-3.html" class="btn">View Project</a>
+                <a href="project-3.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
           
           <!-- Project 4 -->
           <div class="portfolio-item" data-category="web">
-            <div class="portfolio-image" style="background-image:url('images/project-4.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-4.jpg')">
               <div class="overlay">
                 <h3>Portfolio Website</h3>
                 <span class="category">Web Design</span>
-                <a href="project-4.html" class="btn">View Project</a>
+                <a href="project-4.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
           
           <!-- Project 5 -->
           <div class="portfolio-item" data-category="branding">
-            <div class="portfolio-image" style="background-image:url('images/project-5.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-5.jpg')">
               <div class="overlay">
                 <h3>Startup Branding</h3>
                 <span class="category">Branding</span>
-                <a href="project-5.html" class="btn">View Project</a>
+                <a href="project-5.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
           
           <!-- Project 6 -->
           <div class="portfolio-item" data-category="web">
-            <div class="portfolio-image" style="background-image:url('images/project-6.jpg');">
+            <div class="portfolio-image" style="background-image:url('images/project-6.jpg')">
               <div class="overlay">
                 <h3>Mobile App Design</h3>
                 <span class="category">Web Design</span>
-                <a href="project-6.html" class="btn">View Project</a>
+                <a href="project-6.html" class="btn btn-small">View Project</a>
               </div>
             </div>
           </div>
@@ -133,8 +132,8 @@
     </section>
 
     <!-- Call to Action -->
-    <section id="cta">
-      <div class="container">
+    <section id="cta" class="section-padding bg-dark">
+      <div class="container text-center">
         <h2>Like what you see?</h2>
         <p>I'm available for new projects and would love to work with you.</p>
         <a href="index.html#contact" class="btn">Get In Touch</a>
@@ -142,12 +141,14 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
-        <div class="footer-links">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -155,10 +156,10 @@
 
   <!-- Scroll to Top Button -->
   <div class="scroll-top">
-    <a href="#portfolio-hero" class="scroll-top-link"><i class="fas fa-arrow-up"></i></a>
+    <a href="#portfolio-hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
   </div>
 
   <script src="js/main.js"></script>
-  <script src="js/portfolio-filter.js"></script>
+  <script src="js/filter.js"></script>
 </body>
 </html>

@@ -15,8 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
         portfolioItems.forEach(item => {
           if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
             item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+            }, 50);
           } else {
-            item.style.display = 'none';
+            item.style.opacity = '0';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
           }
         });
       });

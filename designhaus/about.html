@@ -26,21 +26,20 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html" class="active">About</a></li>
         </ul>
         <div class="social-links">
           <ul>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- About Hero Section -->
-    <section id="about-hero">
+    <section id="about-hero" class="hero-section">
       <div class="container">
         <h1>About Me</h1>
         <p>Get to know the person behind the designs</p>
@@ -48,11 +47,11 @@
     </section>
 
     <!-- About Content Section -->
-    <section id="about-content">
+    <section id="about-content" class="section-padding">
       <div class="container">
         <div class="about-main">
           <div class="about-image">
-            <img src="images/person3.jpg" alt="John Obiko">
+            <img src="images/person3.jpg" alt="John Obiko" loading="lazy">
           </div>
           <div class="about-text">
             <h2>John Obiko</h2>
@@ -61,7 +60,7 @@
             
             <div class="skills">
               <h3>My Skills</h3>
-              <ul>
+              <ul class="skills-list">
                 <li>UI/UX Design</li>
                 <li>Frontend Development</li>
                 <li>Brand Identity</li>
@@ -75,8 +74,8 @@
           </div>
         </div>
 
-        <div class="experience">
-          <h2>Professional Experience</h2>
+        <div class="experience section-padding">
+          <h2 class="section-title">Professional Experience</h2>
           <div class="timeline">
             <div class="timeline-item">
               <h3>Senior Web Designer</h3>
@@ -102,8 +101,8 @@
     </section>
 
     <!-- Call to Action -->
-    <section id="cta">
-      <div class="container">
+    <section id="cta" class="section-padding bg-dark">
+      <div class="container text-center">
         <h2>Ready to start your project?</h2>
         <p>I'm available for freelance work and would love to hear about your project.</p>
         <a href="index.html#contact" class="btn">Get In Touch</a>
@@ -111,12 +110,14 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
-        <div class="footer-links">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -124,7 +125,7 @@
 
   <!-- Scroll to Top Button -->
   <div class="scroll-top">
-    <a href="#about-hero" class="scroll-top-link"><i class="fas fa-arrow-up"></i></a>
+    <a href="#about-hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
   </div>
 
   <script src="js/main.js"></script>

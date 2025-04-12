@@ -9,24 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 500);
     });
   
-    // Smooth scrolling to sections
-    const links = document.querySelectorAll('a[href^="#"]');
-    
-    links.forEach(anchor => {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#') return;
+        
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
           target.scrollIntoView({
             behavior: 'smooth'
           });
-          
-          // Update URL without jumping
-          if (history.pushState) {
-            history.pushState(null, null, this.getAttribute('href'));
-          } else {
-            location.hash = this.getAttribute('href');
-          }
         }
       });
     });
@@ -43,6 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(item => {
+      item.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          menuToggle.querySelector('i').classList.remove('fa-times');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  
     // Scroll to top button
     const scrollTop = document.querySelector('.scroll-top');
     
@@ -54,28 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   
-    // Close mobile menu when clicking on a link
-    const navItems = document.querySelectorAll('.nav-links a');
-    
-    navItems.forEach(item => {
-      item.addEventListener('click', () => {
-        if (navLinks.classList.contains('active')) {
-          navLinks.classList.remove('active');
-          menuToggle.querySelector('i').classList.remove('fa-times');
-          document.body.style.overflow = '';
-        }
-      });
-    });
-  
     // Form submission
     const contactForm = document.querySelector('#contact form');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Show loading state
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
+        
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
         
@@ -83,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
           submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
           
-          // Reset form after 2 seconds
           setTimeout(function() {
             contactForm.reset();
             submitBtn.textContent = originalText;
@@ -93,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   
-    // Add focus styles for keyboard navigation
+    // Keyboard navigation focus styles
     document.addEventListener('keyup', function(e) {
       if (e.key === 'Tab') {
         const focusedElement = document.activeElement;
