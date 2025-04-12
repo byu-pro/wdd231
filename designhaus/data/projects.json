@@ -1,17 +1,82 @@
 [
-    {
-      "id": 1,
-      "title": "Elegance Branding",
-      "category": "branding",
-      "tags": ["Logo", "Identity", "Print"],
-      "description": "Complete brand identity for luxury fashion label",
-      "image": "images/projects/project1.jpg",
-      "featured": true,
-      "details": {
-        "client": "Elegance Couture",
-        "year": "2024",
-        "services": ["Brand Strategy", "Logo Design", "Stationery"],
-        "challenge": "Create a sophisticated identity that appeals to high-end clients..."
-      }
+  {
+    "id": 1,
+    "title": "Elegance Branding",
+    "category": "branding",
+    "tags": ["Logo", "Identity", "Print"],
+    "description": "Complete brand identity for luxury fashion label",
+    "image": "images/projects/project1.jpg",
+    "featured": true,
+    "details": {
+      "client": "Elegance Couture",
+      "year": "2024",
+      "services": ["Brand Strategy", "Logo Design", "Stationery"],
+      "challenge": "Create a sophisticated identity that appeals to high-end clients while maintaining timeless elegance.",
+      "solution": "We developed a minimalist logo with custom typography and a refined color palette that reflects the brand's luxury positioning."
     }
-  ]
+  },
+  {
+    "id": 2,
+    "title": "Urban Cafe Website",
+    "category": "web",
+    "tags": ["Responsive", "E-commerce", "UI/UX"],
+    "description": "Modern website for a specialty coffee shop",
+    "image": "images/projects/project2.jpg",
+    "featured": true,
+    "details": {
+      "client": "Urban Cafe",
+      "year": "2023",
+      "services": ["Web Design", "Development", "CMS Integration"],
+      "challenge": "Creating an online presence that reflects the cafe's artisanal approach while being easy to maintain.",
+      "solution": "We built a custom WordPress theme with mobile-first responsive design and integrated online ordering."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Health App UI",
+    "category": "web",
+    "tags": ["Mobile", "Prototype", "Figma"],
+    "description": "User interface for a fitness tracking application",
+    "image": "images/projects/project3.jpg",
+    "featured": false,
+    "details": {
+      "client": "Vitality Health",
+      "year": "2023",
+      "services": ["UI Design", "Prototyping", "User Testing"],
+      "challenge": "Designing an interface that makes complex health data accessible and motivating.",
+      "solution": "Created a clean dashboard with customizable widgets and intuitive navigation patterns."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Organic Food Packaging",
+    "category": "packaging",
+    "tags": ["Sustainable", "Print", "Illustration"],
+    "description": "Eco-friendly packaging for organic food line",
+    "image": "images/projects/project4.jpg",
+    "featured": true,
+    "details": {
+      "client": "Green Eats",
+      "year": "2023",
+      "services": ["Packaging Design", "Illustration", "Print Production"],
+      "challenge": "Develop sustainable packaging that stands out on shelves while minimizing environmental impact.",
+      "solution": "Designed compostable packaging with vibrant botanical illustrations that communicate the brand's values."
+    }
+  },
+  {
+    "id": 5,
+    "title": "Tech Conference Branding",
+    "category": "branding",
+    "tags": ["Event", "Print", "Digital"],
+    "description": "Complete branding for annual technology conference",
+    "image": "images/projects/project5.jpg",
+    "featured": false,
+    "details": {
+      "client": "FutureTech",
+      "year": "2022",
+      "services": ["Brand Identity", "Print Collateral", "Digital Assets"],
+      "challenge": "Create a dynamic identity system that works across multiple platforms and appeals to a tech-savvy audience.",
+      "solution": "Developed a modular logo system with animated digital versions and bold print applications."
+    }
+  }
+]
