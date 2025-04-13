@@ -493,9 +493,16 @@ img {
   gap: var(--space-md);
 }
 
+.footer-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
 .footer-links a {
-  margin-left: var(--space-md);
   color: var(--text-secondary);
+  transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer-links a:hover {
@@ -620,6 +627,18 @@ img {
   .about-image {
     margin-bottom: var(--space-lg);
   }
+
+  /* Footer adjustments for tablet */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+  
+  .footer-links {
+    justify-content: center;
+    margin-top: var(--space-sm);
+  }
 }
 
 @media (max-width: 576px) {
@@ -649,58 +668,13 @@ img {
     text-align: center;
   }
 
- /* Footer Styles */
-.footer {
-  background-color: var(--true-black);
-  color: var(--text-secondary);
-  padding: var(--space-md) 0;
-  border-top: 1px solid var(--border-color);
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-md);
-}
-
-.footer-links {
-  display: flex;
-  gap: var(--space-md);
-  align-items: center;
-}
-
-.footer-links a {
-  color: var(--text-secondary);
-  transition: color 0.3s ease;
-  white-space: nowrap;
-}
-
-.footer-links a:hover {
-  color: var(--accent-primary);
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-    gap: var(--space-sm);
-  }
-  
-  .footer-links {
-    justify-content: center;
-    margin-top: var(--space-sm);
-  }
-}
-
-@media (max-width: 480px) {
+  /* Footer adjustments for mobile */
   .footer-links {
     flex-direction: column;
     gap: var(--space-xs);
   }
 }
+
 /* Site Plan Specific Styles */
 .site-plan-container {
   padding-top: 100px;
@@ -813,7 +787,7 @@ img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Site Plan */
 @media (max-width: 768px) {
   .site-plan-header h1 {
     font-size: 2rem;
@@ -832,3 +806,4 @@ img {
   .wireframe {
     min-width: 100%;
   }
+}
