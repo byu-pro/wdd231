@@ -273,7 +273,26 @@ a {
   transition: opacity 0.5s ease;
   color: white;
 }
+.portfolio-image-container {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
 
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0.2, 1), 
+              filter 0.3s ease;
+}
+
+/* Smoother hover effect */
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.03);
+  filter: grayscale(80%) brightness(0.9);
+}
 .portfolio-item:hover .overlay {
   opacity: 1;
 }
