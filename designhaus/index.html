@@ -76,8 +76,7 @@
 	  <a href="portfolio.html" class="btn">View My Work</a>
 	</div>
   </section>
-
-  <!-- Portfolio Preview Section -->
+<!-- Portfolio Preview Section -->
 <section id="portfolio-preview" class="section-padding">
 	<div class="container">
 	  <h2 class="section-title">Featured Projects</h2>
@@ -87,11 +86,14 @@
 		  <a href="portfolio.html#project-1" class="portfolio-link" aria-label="View E-Commerce Website Project">
 			<div class="portfolio-image" 
 				 style="--thumb:url('images/project-1-thumb.webp');
-					   --full:url('/images/project-1-full.webp')">
+					   --full:url('images/project-1-full.webp')">
+			  <!-- Fallback for non-WebP browsers -->
+			  <noscript>
+				<img src="images/project-1-thumb.jpg" alt="E-Commerce Website" class="fallback-img">
+			  </noscript>
 			  <div class="overlay">
 				<h3>E-Commerce Website</h3>
 				<span class="category">Web Design</span>
-				<span class="sr-only">Click to view case study</span>
 			  </div>
 			</div>
 		  </a>
@@ -101,12 +103,14 @@
 		<div class="portfolio-item" data-project="2">
 		  <a href="portfolio.html#project-2" class="portfolio-link" aria-label="View Corporate Branding Project">
 			<div class="portfolio-image" 
-				 style="--thumb:url('images/portfolio/project-2-thumb.webp');
-					   --full:url('images/portfolio/project-2-full.webp')">
+				 style="--thumb:url('images/project-2-thumb.webp');
+					   --full:url('images/project-2-full.webp')">
+			  <noscript>
+				<img src="images/project-2-thumb.jpg" alt="Corporate Branding" class="fallback-img">
+			  </noscript>
 			  <div class="overlay">
 				<h3>Corporate Branding</h3>
 				<span class="category">Branding</span>
-				<span class="sr-only">Click to view case study</span>
 			  </div>
 			</div>
 		  </a>
@@ -116,12 +120,14 @@
 		<div class="portfolio-item" data-project="3">
 		  <a href="portfolio.html#project-3" class="portfolio-link" aria-label="View Digital Illustrations Project">
 			<div class="portfolio-image" 
-				 style="--thumb:url('images/portfolio/project-3-thumb.webp');
-					   --full:url('images/portfolio/project-3-full.webp')">
+				 style="--thumb:url('images/project-3-thumb.webp');
+					   --full:url('images/project-3-full.webp')">
+			  <noscript>
+				<img src="images/project-3-thumb.jpg" alt="Digital Illustrations" class="fallback-img">
+			  </noscript>
 			  <div class="overlay">
 				<h3>Digital Illustrations</h3>
 				<span class="category">Illustration</span>
-				<span class="sr-only">Click to view case study</span>
 			  </div>
 			</div>
 		  </a>
@@ -181,6 +187,24 @@
   <div class="scroll-top">
     <a href="#hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
   </div>
+
+  <script>
+	// WebP detection
+	function checkWebPSupport(callback) {
+	  var img = new Image();
+	  img.onload = function() {
+		callback(true);
+	  };
+	  img.onerror = function() {
+		callback(false);
+	  };
+	  img.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==';
+	}
+  
+	checkWebPSupport(function(isSupported) {
+	  document.documentElement.classList.toggle('no-webp', !isSupported);
+	});
+  </script>
 
   <script src="js/main.js"></script>
 </body>

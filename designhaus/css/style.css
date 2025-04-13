@@ -201,7 +201,22 @@ body {
   height: 4px;
   background-color: var(--accent-primary);
 }
+/* Fallback image styling */
+.fallback-img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
 
+.no-webp .portfolio-image,
+.no-js .portfolio-image {
+  background-image: none !important;
+}
+
+.no-webp .fallback-img,
+.no-js .fallback-img {
+  display: block;
+}
 a {
   text-decoration: none;
   color: var(--accent-primary);
