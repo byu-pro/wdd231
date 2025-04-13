@@ -184,12 +184,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-@media (max-width: 768px) {
-  .portfolio-image {
-    /* Slightly smaller files for mobile */
-    background-image: url('images/project-1-mobile.webp');
-  }
-}
+
 .section-title {
   font-size: 2.5rem;
   margin-bottom: var(--space-lg);
