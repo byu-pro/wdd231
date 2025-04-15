@@ -1060,3 +1060,96 @@ img {
     min-width: 100%;
   }
 }
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #2e2e2e;
+  margin: 5% auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 8px;
+  position: relative;
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {transform: translateY(-50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+.close-modal {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #B5179E;
+}
+
+.modal-body {
+  display: flex;
+  gap: 30px;
+}
+
+.modal-image-container {
+  flex: 1;
+}
+
+.modal-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.modal-text {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.modal-category {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 15px;
+  background: #5c5c5c;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    margin: 10% auto;
+    padding: 20px;
+  }
+  
+  .modal-body {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

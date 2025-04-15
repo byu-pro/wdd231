@@ -82,7 +82,7 @@
         <div class="grid">
           <!-- Project 1 -->
           <div class="portfolio-item" data-category="web">
-            <a href="project-1.html" class="portfolio-link">
+            <a href="project-1" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-1-thumb.webp" 
                      srcset="images/project-1-thumb.webp 800w, images/project-1-full.webp 1200w"
@@ -103,7 +103,7 @@
           
           <!-- Project 2 -->
           <div class="portfolio-item" data-category="branding">
-            <a href="project-2.html" class="portfolio-link">
+            <a href="project-2" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-2-thumb.webp" 
                      srcset="images/project-2-thumb.webp 800w, images/project-2-full.webp 1200w"
@@ -124,7 +124,7 @@
           
           <!-- Project 3 -->
           <div class="portfolio-item" data-category="illustration">
-            <a href="project-3.html" class="portfolio-link">
+            <a href="project-3" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-3-thumb.webp" 
                      srcset="images/project-3-thumb.webp 800w, images/project-3-full.webp 1200w"
@@ -145,7 +145,7 @@
           
           <!-- Project 4 -->
           <div class="portfolio-item" data-category="illustration">
-            <a href="project-4.html" class="portfolio-link">
+            <a href="project-4" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-4-thumb.webp" 
                      srcset="images/project-4-thumb.webp 800w, images/project-4-full.webp 1200w"
@@ -166,7 +166,7 @@
           
           <!-- Project 5 -->
           <div class="portfolio-item" data-category="illustration">
-            <a href="project-5.html" class="portfolio-link">
+            <a href="project-5" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-5-thumb.webp" 
                      srcset="images/project-5-thumb.webp 800w, images/project-5-full.webp 1200w"
@@ -187,7 +187,7 @@
           
           <!-- Project 6 -->
           <div class="portfolio-item" data-category="illustration">
-            <a href="project-6.html" class="portfolio-link">
+            <a href="project-6" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-6-thumb.webp" 
                      srcset="images/project-6-thumb.webp 800w, images/project-6-full.webp 1200w"
@@ -235,6 +235,24 @@
     <!-- Scroll to Top Button -->
     <div class="scroll-top">
       <a href="#portfolio-hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- Project Showcase Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image-container">
+            <img id="modal-image" src="" alt="">
+          </div>
+          <div class="modal-text">
+            <h2 id="modal-title"></h2>
+            <span class="modal-category"></span>
+            <p id="modal-description"></p>
+            <a href="#" class="btn" id="modal-link">View Full Project</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
