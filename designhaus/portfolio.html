@@ -66,6 +66,7 @@
     <!-- Portfolio Filter -->
     <section id="portfolio-filter" class="section-padding bg-dark">
       <div class="container">
+        <h2 class="visually-hidden">Portfolio Filter</h2>
         <ul class="filter-nav">
           <li class="active" data-filter="all">All Projects</li>
           <li data-filter="web">Web Design</li>
@@ -85,6 +86,7 @@
             <div class="portfolio-image-container">
               <img src="images/project-1-thumb.webp" 
                    srcset="images/project-1-thumb.webp 800w, images/project-1-full.webp 1200w"
+                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                    alt="E-Commerce Website Screenshot"
                    width="800"
                    height="600"
@@ -105,6 +107,7 @@
             <div class="portfolio-image-container">
               <img src="images/project-2-thumb.webp" 
                    srcset="images/project-2-thumb.webp 800w, images/project-2-full.webp 1200w"
+                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                    alt="Corporate Branding Samples"
                    width="800"
                    height="600"
@@ -125,6 +128,7 @@
             <div class="portfolio-image-container">
               <img src="images/project-3-thumb.webp" 
                    srcset="images/project-3-thumb.webp 800w, images/project-3-full.webp 1200w"
+                   sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                    alt="Digital Illustration Examples"
                    width="800"
                    height="600"
@@ -141,10 +145,11 @@
         
         <!-- Project 4 -->
         <div class="portfolio-item" data-category="illustration">
-            <a href="project-3.html" class="portfolio-link">
+            <a href="project-4.html" class="portfolio-link">
               <div class="portfolio-image-container">
                 <img src="images/project-4-thumb.webp" 
-                     srcset="images/project-3-thumb.webp 800w, images/project-3-full.webp 1200w"
+                     srcset="images/project-4-thumb.webp 800w, images/project-4-full.webp 1200w"
+                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                      alt="Digital Illustration Examples"
                      width="800"
                      height="600"
@@ -161,10 +166,11 @@
         
           <!-- Project 5 -->
         <div class="portfolio-item" data-category="illustration">
-            <a href="project-3.html" class="portfolio-link">
+            <a href="project-5.html" class="portfolio-link">
               <div class="portfolio-image-container">
-                <img src="images/project-3-thumb.webp" 
-                     srcset="images/project-3-thumb.webp 800w, images/project-3-full.webp 1200w"
+                <img src="images/project-5-thumb.webp" 
+                     srcset="images/project-5-thumb.webp 800w, images/project-5-full.webp 1200w"
+                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                      alt="Digital Illustration Examples"
                      width="800"
                      height="600"
@@ -181,10 +187,11 @@
         
           <!-- Project 6 -->
         <div class="portfolio-item" data-category="illustration">
-            <a href="project-3.html" class="portfolio-link">
+            <a href="project-6.html" class="portfolio-link">
               <div class="portfolio-image-container">
-                <img src="images/project-3-thumb.webp" 
-                     srcset="images/project-3-thumb.webp 800w, images/project-3-full.webp 1200w"
+                <img src="images/project-6-thumb.webp" 
+                     srcset="images/project-6-thumb.webp 800w, images/project-6-full.webp 1200w"
+                     sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                      alt="Digital Illustration Examples"
                      width="800"
                      height="600"
@@ -212,27 +219,43 @@
       </div>
     </section>
 
- <!-- Footer -->
-<footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
-        <div class="footer-links">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Service</a>
-          <a href="site-plan.html">Site Plan</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 DesignHaus | John Obiko. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="site-plan.html">Site Plan</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  </div>
+    </footer>
 
-  <!-- Scroll to Top Button -->
-  <div class="scroll-top">
-    <a href="#portfolio-hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
-  </div>
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+      <a href="#hero" class="scroll-top-link" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </div> <!-- Closing div for #page -->
+
+  <script>
+    // WebP detection
+    function checkWebPSupport(callback) {
+      var img = new Image();
+      img.onload = function() {
+        callback(true);
+      };
+      img.onerror = function() {
+        callback(false);
+      };
+      img.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==';
+    }
+  
+    checkWebPSupport(function(isSupported) {
+      document.documentElement.classList.toggle('no-webp', !isSupported);
+    });
+  </script>
 
   <script src="js/main.js"></script>
-  <script src="js/filter.js"></script>
 </body>
 </html>
